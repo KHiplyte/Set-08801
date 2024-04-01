@@ -1,6 +1,6 @@
 /*CSS for all pages in our site*/
 .ALL {background-repeat:repeat,no-repeat;
-	  background-image:url("Images/NBALOGO.png"),url(DomainLogo.png);
+	  background-image:url("Images/NBALOGO.png"),url("Images/DomainLogo.png");
 	  background-size:contain,200px;
 	  background-blend-mode:overlay;
 	  background-attachment:fixed;
@@ -178,7 +178,7 @@ th, td, tr {
 		font-size: 50px;
 	}
 
-	.Player-Body {
+	.Top25-Body {
 		display:Flex;
 		flex-direction:column;
 		align-items:center;
@@ -193,7 +193,6 @@ th, td, tr {
 }
 	.Player-Table tr{
 		text-align:Center;
-		border-color:grey;
 		height:20px;
 		font-size:10px;
 		padding:5px;
@@ -210,4 +209,9 @@ th, td, tr {
 		font-size:20px;
 		font-family:Agency FB;
 	}
+
+	/*Personal Player Pages*/
+
+
+
 
