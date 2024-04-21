@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="The Goat Domain Main.css" type="text/css" />
+    <title>Quiz - The GOAT Domain</title>
+    <link rel="icon" type="image/png" href="Images/DomainLogo.png"/>
+</head>
+
+
+
+<!--Body of The Page-->
+
+<Body class="ALL">
+    <h1 class="Main-Head">
+        <a href="The GOAT Domain Homepage.html">The Goat Domain</a>
+    </h1>
+
+   <ul class="Nav-Bar">
+    <li><a href="#">THE TOP 25</a></li>
+    <li><a href="#">Basketball School</a></li>
+    <li><a href="Basketbal Quiz.html">Basketball Trivia</a></li>
+    <li class="drop"><a onclick="dropper()" class="abut">Basketball Math</a>
+    <div id="dropmenu" class="dropcont">
+    <a href="#">Shot Calculation</a>
+    <a href="#">Rate A Player</a>
+    </div>
+    </li>
+</ul>
+
+    <!-- QUIZ PORTION OF Page-->
+
+    <div id="beginquiz">
+        <p style="font-family:'Franklin Gothic';font-size:20px;">Welcome to Our trivia page!
+        <br>You have 4 questions to answer.
+        <br>Test yourself and see how much you know.
+        <br>TipOff below to start the game.
+        </p>
+        <button id="beginbttn">TipOff</button>
+    </div>
+    <div id="QuizMain" class="hidden">
+        <h1>BasketBall Quiz</h1>
+        <div class="Quiz">
+            <h2 id="question">Question spot</h2>
+            <div id="QuizAns">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-bttn">Next</button>
+        </div>
+    </div>
+    <script src="BasketballQuiz.js"></script>
+
+
+    <footer class="Main-footer">
+        <ul class="Footer-Info" style="font-size:30px;">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="socials">
+            <a target="_blank" href="https://www.youtube.com/"><img src="https://cdn.nba.com/next/social/icon-youtube-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="https://cdn.nba.com/next/social/icon-instagram-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="https://cdn.nba.com/next/social/icon-facebook-color.svg" width="40" height="40"></a>
+        </div>
+
+        <p class="copyright"> © 2024 NBA Media Ventures, LLC. All rights reserved.|Copyright © 2000-2024 Sports Reference LLC. All rights reserved.<p>
+    </footer>
+
+</Body>
+
+</html>

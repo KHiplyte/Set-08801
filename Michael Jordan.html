@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="The Goat Domain Main.css" type="text/css" />
     <title>Michael Jordan-The GOAT Domain</title>
-    <link rel="icon" type="image/png" href="DomainLogo.png" />
+    <link rel="icon" type="image/png" href="Images/DomainLogo.png" />
 </head>
 
 
@@ -17,15 +17,46 @@
 
     <ul class="Nav-Bar">
         <li><a href="The Top 25.html">THE TOP 25</a></li>
-        <li><a href="#">Basketball School</a></li>
-        <li><a href="#">Basketball Trivia</a></li>
+        <li><a href="#" onmouseout="alert('Hello World');">Basketball School</a></li>
+        <li><a href="Basketball Quiz.html">Basketball Trivia</a></li>
         <li><a href="#">Basketball Math</a></li>
     </ul>
     <div class="Player-Body">
-         
+        <div class="Player-Profile" style="background-color: #a5041ed9;">
+            <div class="Player-Cat0" style="background-image: url(https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg); background-repeat:no-repeat">
+                <div class="Player-Cat0-1">
+                    <img src="https://www.pngall.com/wp-content/uploads/5/Michael-Jordan.png" s alt="Michael Jordan" width="100%" height="200">
+                </div>
+                <div class="Player-Cat0-2">
+                    <H3>Michael Jordan</H3>
+                    <P>
+                        Teams:
+                        Chicago Bulls, Washington Wizard
+                    </P>
+                    <br>
+                    <p>Position: Shooting Guard<p>
+                        <br>
+                    <p>Nickname: Air Jordan</p>
+                </div>
+            </div>
+            <div class="Player-Cat1">
+                <div class="PlayerCat1-1" title="Points Per Game">PPG <hr> 30.1</div>
+                <div class="PlayerCat1-1" title="Assists Per Game">APG <hr> 5.3</div>
+                <div class="PlayerCat1-1" title="Rebounds Per Game">RPG <hr> 6.2</div>
+            </div>
+            <div class="Player-Cat2" title="Date Of Birth"> DOB <br>FEB 17TH 1963</div>
+            <div class="Player-Cat2">Height <br> 6ft6 </div>
+            <div class="Player-Cat2">Weight <br> 216lbs</div>
+            <div class="Player-Cat2">Draft <br> 1984 R1 #3</div>
+            <div class="Player-Cat2">Years Active <br> 15</div>
+            <div class="Player-Cat2">Championships <br> 6</div>
+        </div>
+
+        <iframe width="90%" height="400" src="https://www.youtube.com/embed/_fsJLyPb18s?si=2pFeYJCZGF4OB3Tl" title="YouTube video player" frameborder="0" allow="accelerometer;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="align-self:center; margin-block:50px;"></iframe>
+
     </div>
     <footer class="Main-footer">
-        <ul style="font-size:30px;">
+        <ul class="Footer-Info" style="font-size:30px;">
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -39,6 +70,36 @@
         <p class="copyright"> © 2024 NBA Media Ventures, LLC. All rights reserved.|Copyright © 2000-2024 Sports Reference LLC. All rights reserved.<p>
     </footer>
 
+    <script>
+        function dropper() {
+            document.getElementById("dropmenu").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.abut')) {
+                var dropdowns = document.getElementsByClassName("dropcont");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <ul class="Nav-Bar">
+        <li><a href="#">THE TOP 25</a></li>
+        <li><a href="#">Basketball School</a></li>
+        <li><a href="Basketbal Quiz.html">Basketball Trivia</a></li>
+        <li class="drop">
+            <a onclick="dropper()" class="abut">Basketball Math</a>
+            <div id="dropmenu" class="dropcont">
+                <a href="#">Shot Calculation</a>
+                <a href="#">Rate A Player</a>
+            </div>
+        </li>
+    </ul>
 </Body>
 
 </html>
