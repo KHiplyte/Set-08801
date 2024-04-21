@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="The Goat Domain Main.css" type="text/css" />
     <title>Top Players-The GOAT Domain</title>
+    <link rel="icon" type="image/png" href="Images/DomainLogo.png" />
 </head>
     
 
@@ -18,8 +19,13 @@
     <ul class="Nav-Bar">
         <li><a href="#">THE TOP 25</a></li>
         <li><a href="#">Basketball School</a></li>
-        <li><a href="#">Basketball Trivia</a></li>
-        <li><a href="#">Basketball Math</a></li>
+        <li><a href="Basketbal Quiz.html">Basketball Trivia</a></li>
+        <li class="drop"><a onclick="dropper()" class="abut">Basketball Math</a>
+        <div id="dropmenu" class="dropcont">
+        <a href="#">Shot Calculation</a>
+        <a href="#">Rate A Player</a>
+        </div>
+        </li>
     </ul>
     <h2 class="Top-Players-Head">Top Players Ever</h2>
     <div class="Top25-Body">
@@ -489,8 +495,10 @@
         </div>
     </div>
 
+    
+
     <footer class="Main-footer">
-        <ul style="font-size:30px;">
+        <ul class="Footer-Info" style="font-size:30px;">
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -503,5 +511,24 @@
 
         <p class="copyright"> © 2024 NBA Media Ventures, LLC. All rights reserved.|Copyright © 2000-2024 Sports Reference LLC. All rights reserved.<p>
     </footer>
+
+    <script>
+        function dropper() {
+            document.getElementById("dropmenu").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.abut')) {
+                var dropdowns = document.getElementsByClassName("dropcont");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </Body>
 </html>
