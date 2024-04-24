@@ -119,9 +119,12 @@ display:block;
 	background-image: URL("Images/sparkles.jpg");
 	background-color: rgba(255,255,255,0.8);
 	background-blend-mode: lighten;
-	background-size:cover;
-	object-fit: cover;
-	padding-block:25px;
+	background-size: cover;
+	box-sizing:content-box;
+	height: fit-content;
+	overflow-block:scroll;
+	padding-block: 25px;
+	margin-bottom: 10%;
 }
 
 .JordanPromo, .LebronPromo, .WiltPromo, .RussellPromo, .CurryPromo {
@@ -459,6 +462,91 @@ padding:1% 2%;
 	.ratingcalc {
 	margin-inline:5%;
 	padding-inline:2%;
+	}
+}
+
+
+/*Basketball School Page*/
+.navschool{
+border:solid;
+justify-content:space-around;
+margin-inline:30%;
+background-color:black;
+color:white;
+}
+
+	.navschool ol {
+	margin-block:20px;
+	}
+
+.schoolsection {
+display:flex;
+flex-direction:column;
+}
+
+.schoolsection img {
+width:240px;
+height:180px;
+display:block;
+margin-inline:auto; 
+}
+
+	.schoolsection h1 {
+		text-align: center;
+		color:red;
+		font-family: 'Before Collapse';
+		font-size: x-large;
+		animation: light 2s ease-in-out infinite alternate;
+	}
+
+	.schoolsection h2 {
+		margin-block:30px;
+		color:cornflowerblue;
+		font-family:Altero;
+		text-transform: uppercase;
+		animation: glow 2s ease-in-out infinite alternate;
+	}
+
+.schoolsection h3 {
+	margin-block: 10px;
+	animation: bright 2s ease-in-out infinite alternate;
+}
+
+.schoolsection article {
+	border: solid;
+	border-radius: 15px;
+	background-color: black;
+	color:white;
+	margin:2% 5%;
+	padding:2% 5%;
+}
+@keyframes glow {
+	from {
+		text-shadow: 0 0 20px blue;
+	}
+
+	to {
+		text-shadow: 0 0 30px blue, 0 0 10px white;
+	}
+}
+
+@keyframes light {
+	from {
+		text-shadow: 0 0 20px red;
+	}
+
+	to {
+		text-shadow: 0 0 30px red, 0 0 10px black;
+	}
+}
+
+@keyframes bright {
+	from {
+		text-shadow: 0 0 20px white;
+	}
+
+	to {
+		text-shadow: 0 0 30px white, 0 0 10px white;
 	}
 }
 
