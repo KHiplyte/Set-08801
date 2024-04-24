@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="The GOAT Domain Main.css" type="text/css" />
+    <title>The GOAT Domain</title>
+    <link rel="icon" type="image/png" href="Images/DomainLogo.png" />
+</head>
+
+
+
+<!--Body of The Page-->
+
+<Body class="ALL">
+    <h1 class="Main-Head">
+        <a href="The GOAT Domain Homepage.html">The Goat Domain</a>
+    </h1>
+
+    <ul class="Nav-Bar">
+        <li><a href="The TOP 25.html">THE TOP 25</a></li>
+        <li><a href="#">Basketball School</a></li>
+        <li><a href="Basketball Quiz.html">Basketball Trivia</a></li>
+        <li class="drop">
+            <a onclick="dropper()" class="abut">Basketball Math</a>
+            <div id="dropmenu" class="dropcont">
+                <a href="Shot Calculation.html">Shot Calculation</a>
+                <a href="Player Rater.html">Rate A Player</a>
+            </div>
+        </li>
+    </ul>
+
+    <section class="MainRating">
+        <article class="ratingexplain">
+            <H1>Goat Domain Player Rating</H1>
+            <p>Ever Wanted to Rate you and your mates' game and ability? Ever Wanted to have a rating for yourself just like those players in 2k?
+            well here's your chance!
+           </p>
+            <br>
+            <p>
+                Our Player Rating Calculator takes into consideration 10 different aspects of the game and gives you a tangible overall on your assessment of a player whether it be you or someone else.
+            </p>
+            <br>
+            <h2>
+                HERE'S HOW IT WORKS</h2>
+            <P>
+                Think about your player's ability in each category and rate them 1 - 100 (Remember, be honest).<br>
+                Select Your Player's position, Each position does different things on the court at different levels, so ofcourse the position affects the rating.
+                <br>
+                Finally submit your ratings and get back your player overall, easy.
+            </p>
+        </article>
+        <div class="ratingcalc">
+            <h2>Rate A Player!</h2>
+    <label for="PositionSelect">Choose a Position:</label>
+    <select id="PositionSelect">
+        <option value="Point Guard">Point Guard</option>
+        <option value="Shooting Guard">Shooting Guard</option>
+        <option value="Small Forward">Small Forward</option>
+        <option value="Power Forward">Power Forward</option>
+        <option value="Center">Center</option>
+    </select>
+    
+    <label for="three">3 Point Shot:</label>
+    <input id="three" placeholder="3 point shot">
+    
+    <label for="midrange shot">Mid Range Shot:</label>
+    <input id="midrange shot" placeholder="Midrange shot">
+    
+    <label for="close shot">Close Shot:</label>
+    <input id="close shot" placeholder="Close shot">
+    
+    <label for="passing">Passing:</label>
+    <input id="passing" placeholder="Passing">
+    
+    <label for="handles">Handles:</label>
+    <input id="handles" placeholder="Handles">
+    
+    <label for="blocking">Blocking:</label>
+    <input id="blocking" placeholder="Blocking">
+    
+    <label for="steals">Steals:</label>
+    <input id="steals" placeholder="Steals">
+    
+    <label for="physicals">Physicals:</label>
+    <input id="physicals" placeholder="Physicals">
+    
+    <label for="footwork">Foot-Work/Post-Game:</label>
+    <input id="footwork" placeholder="Foot Work">
+    
+    <label for="rebounds">Rebounds:</label>
+    <input id="rebounds" placeholder="Rebounds">
+    
+    <label for="overall">Overall Ratings =</label>
+    <input id="overall" placeholder="Overall">
+
+    <button id="resulter">See Your Rating</button>
+    <button id="clearrating" onclick="reset()">Clear</button>
+            </div>
+        </section>
+
+    <footer class="Main-footer">
+        <ul class="Footer-Info" style="font-size:30px;">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="socials">
+            <a target="_blank" href="https://www.youtube.com/"><img src="https://cdn.nba.com/next/social/icon-youtube-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="https://cdn.nba.com/next/social/icon-instagram-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="https://cdn.nba.com/next/social/icon-facebook-color.svg" width="40" height="40"></a>
+        </div>
+
+        <p class="copyright"> © 2024 NBA Media Ventures, LLC. All rights reserved.|Copyright © 2000-2024 Sports Reference LLC. All rights reserved.<p>
+    </footer>
+
+    <script src="Player Rater.js"></script>
+
+</Body>
+
+</html>
