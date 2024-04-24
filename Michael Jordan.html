@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="The Goat Domain Main.css" type="text/css" />
+    <link rel="stylesheet" href="The GOAT Domain Main.css" type="text/css" />
     <title>Michael Jordan-The GOAT Domain</title>
     <link rel="icon" type="image/png" href="Images/DomainLogo.png" />
 </head>
@@ -16,10 +16,16 @@
     </h1>
 
     <ul class="Nav-Bar">
-        <li><a href="The Top 25.html">THE TOP 25</a></li>
-        <li><a href="#" onmouseout="alert('Hello World');">Basketball School</a></li>
+        <li><a href="The TOP 25.html">THE TOP 25</a></li>
+        <li><a href="#">Basketball School</a></li>
         <li><a href="Basketball Quiz.html">Basketball Trivia</a></li>
-        <li><a href="#">Basketball Math</a></li>
+        <li class="drop">
+            <a onclick="dropper()" class="abut">Basketball Math</a>
+            <div id="dropmenu" class="dropcont">
+                <a href="Shot Calculation.html">Shot Calculation</a>
+                <a href="Player Rater.html">Rate A Player</a>
+            </div>
+        </li>
     </ul>
     <div class="Player-Body">
         <div class="Player-Profile" style="background-color: #a5041ed9;">
@@ -88,18 +94,7 @@
             }
         }
     </script>
-    <ul class="Nav-Bar">
-        <li><a href="#">THE TOP 25</a></li>
-        <li><a href="#">Basketball School</a></li>
-        <li><a href="Basketbal Quiz.html">Basketball Trivia</a></li>
-        <li class="drop">
-            <a onclick="dropper()" class="abut">Basketball Math</a>
-            <div id="dropmenu" class="dropcont">
-                <a href="#">Shot Calculation</a>
-                <a href="#">Rate A Player</a>
-            </div>
-        </li>
-    </ul>
+    
 </Body>
 
 </html>
