@@ -70,6 +70,9 @@ display:block;
 			padding: 0;
 		}
 	}
+
+
+
 	/*CSS For the Body of the Main Page*/
 	.Main-Body {
 	display: grid;
@@ -116,7 +119,9 @@ display:block;
 	background-image: URL("images/sparkles.jpg");
 	background-color: rgba(255,255,255,0.8);
 	background-blend-mode: lighten;
+	background-size:cover;
 	object-fit: cover;
+	padding-block:25px;
 }
 
 .JordanPromo, .LebronPromo, .WiltPromo, .RussellPromo, .CurryPromo {
@@ -207,7 +212,11 @@ th, td, tr {
 		max-width: stretch;
 	}
 }
-	/*Top 25 Players page*/
+	
+
+
+
+/*Top 25 Players page*/
 
 	.Top-Players-Head {
 		font-family: Before Collapse;
@@ -225,6 +234,7 @@ th, td, tr {
 .Player-Table {
 	background-color: white;
 	width: 90%;
+	border:solid;
 	font-family: Arial;
 	border-collapse: collapse;
 }
@@ -247,6 +257,7 @@ th, td, tr {
 		font-family:Agency FB;
 	}
 
+	
 	/*Personal Player Pages*/
 	.Player-Body{
 		display:flex;
@@ -375,12 +386,79 @@ margin-top:50px;
 }
 
 
+/*Shot Calculator Page*/
 .explainefg {
 	border:solid;
 	border-radius:15px;
 	background-color:white;
 }
+.efgcalc {
+display:flex;
+flex-direction:column;
+border:solid;
+background-color:white;
+align-content:center;
+margin-inline:40%;
+margin-block:10px;
+padding:1% 2%;
+}
+	.efgcalc h1 {
+	text-align:center;
+	}
 
 
+/*Player Rating Calculator page*/
+.MainRating{
+	display:flex;
+	flex-direction:column;
+}
+
+.ratingexplain{
+	border:ridge;
+	padding-inline:10px;
+	text-align:center;
+	font-family:Cambria;
+	background-color:white;
+}
+
+.ratingcalc {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-evenly;
+	justify-items: center;
+	margin-inline: 25%;
+	padding-inline: 5%;
+	padding-block: 15px;
+	margin-block: 20px;
+	border: groove;
+	background-image: url("Images/center.jpg");
+	background-size: 100%;
+	background-color: rgba(255,255,255,0.8);
+	background-blend-mode: lighten;
+}
+	.ratingcalc h2 {
+	grid-column:1 /span 2;
+	text-align:center;
+	font-family:altero;
+	}
+
+	.ratingcalc button{
+		grid-column:1 /span 2;
+		margin:2px;
+	}
+
+	.ratingcalc input{
+		margin-block:5px;
+		padding:2px;
+	}
+	.ratingcalc label{
+		font-family:altero;
+	}
+@media all and (max-width: 800px){
+	.ratingcalc {
+	margin-inline:5%;
+	padding-inline:2%;
+	}
+}
 
 
