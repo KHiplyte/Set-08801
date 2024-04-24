@@ -1,6 +1,6 @@
 /*CSS for all pages in our site*/
 .ALL {background-repeat:repeat,no-repeat;
-	  background-image:url("Images/NBALOGO.png"),url("Images/DomainLogo.png");
+	  background-image:url("Images/NBALogo.png"),url("Images/DomainLogo.png");
 	  background-size:cover,200px;
 	  background-blend-mode:overlay;
 	  background-attachment:fixed;
@@ -131,6 +131,7 @@ display:block;
 	margin-top: 100px;
 	font-size: 20px;
 	text-align: center;
+	margin-bottom:50px;
 }
 
 @media all and (max-width: 800px) {
@@ -431,7 +432,7 @@ padding:1% 2%;
 	padding-block: 15px;
 	margin-block: 20px;
 	border: groove;
-	background-image: url("Images/center.jpg");
+	background-image: url("Images/Center.jpg");
 	background-size: 100%;
 	background-color: rgba(255,255,255,0.8);
 	background-blend-mode: lighten;
