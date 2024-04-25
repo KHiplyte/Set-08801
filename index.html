@@ -12,7 +12,7 @@
 
 <Body class="ALL">
     <h1 class="Main-Head">
-        <a href="The GOAT Domain Homepage.html">The Goat Domain</a>
+        <a href="index.html">The Goat Domain</a>
     </h1>
 
     <ul class="Nav-Bar">
@@ -45,20 +45,55 @@
                     culculate stats, even rate your own ability. Need data? Need stats? Well we are here, Knock yourself out!
                 </h3>
             </div>
+            <div class="NewPlayers-Container">
+                <div class="NewPlayers spin">
+                    <img src="Images/NikolaJokic.jpg" width="80%" height="50%">
+                    <h2>The next GOAT?</h2>
+                    <p style="font-size:20px;">
+                        <h3>Nikola Jokic</h3>
+                        <br>
+                        The Joker, the serbian a man of few words whose nonchanlant attidude is the antithesis to
+                        his stellar play on the court. Already a champion he's looking very likely to
+                        push the Top 25 maybe even become the greatest ever when it's all said and done. Where do you think he'll land?
+                        find out more <a target="_blank" href="https://www.nba.com/player/203999/nikola-jokic" style="color:red;">HERE.</a>
+                    </p>
+                </div>
 
-            <div class="NewPlayers">
-                <img src="Images/NikolaJokic.jpg" width="80%" height="50%">
-                <h2>Up Next?</h2>
-                <p style="font-size:20px;">
-                    Nikola Jokic
-                    <br>
-                    The Joker, a man of few words whose nonchanlant attidude is the antithesis to
-                    his stellar play on the court. Already a champion he's looking very likely to
-                    push the Top 25 when it's all said and done. where do you think he'll land?
-                    find out more <a target="_blank" href="https://www.nba.com/player/203999/nikola-jokic" style="color:red;">HERE.</a>
-                </p>
+                <div class="NewPlayers spin">
+                    <img src="Images/LukaDoncic.jpg" width="80%" height="50%">
+                    <h2>Already Pushing 25?</h2>
+                    <p style="font-size:20px;">
+                        <h3>Luka Doncic</h3>
+                        <br>
+                        Don Luka, the slovenian was doubted very early in his NBA career many thought of him as just another overhyped european player.
+                        The true scouts knew that he was special, afterall he  did make his euro league debut at only 16 year old. We here think
+                        he is definately top 25 potential maybe a few championships under his belt and we'll be looking at the GOAT. Where do you think he'll land?
+                        find out more <a target="_blank" href="https://www.nba.com/player/1629029/luka-doncic" style="color:red;">HERE.</a>
+                    </p>
+                </div>
+
+                <div class="NewPlayers spin">
+                    <img src="Images/Wemby.jpg" width="80%" height="50%">
+                    <h2>Greatest Rookie ever</h2>
+                    <p style="font-size:20px;">
+                        <h3>Victor Wembanyama</h3>
+                        <br>
+                        The frenchman has been touted as the greatest prospect ever due to his unbelievable mobility and skill at 7 foot 4.  "Wemby" had a
+                        rookie year which undoubtedly lived up to those lofty expectations. Will his career pan out? will he continue to improve even further?
+                        Where do you think he'll land?
+                        find out more <a target="_blank" href="https://www.nba.com/player/1641705/victor-wembanyama" style="color:red;">HERE.</a>
+                    </p>
+                </div>
+
+                <a class="prev" onclick="Slidesmove(-1)">&#10094;</a>
+                <a class="next" onclick="Slidesmove(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
-
             <div class="JordanPromo">
                 <a href="Michael Jordan.html">
                     <img src="Images/JordanPromo.jpg" width=140 height=150>
@@ -114,7 +149,7 @@
 
         <article class="Main-Article">
 
-            <input class="search" type"text" placeholder="search" />
+            <input class="search" type="text" placeholder="search" />
 
             <table class="Main-table">
                 <tr><th>Interested in more?</th></tr>
@@ -126,7 +161,7 @@
 
             <iframe width="90%" height="200" src="https://www.youtube.com/embed/uRz1bNCGjVw?si=r28j7KfZk-yFxzXo" title="ESPN The GOAT Debate" frameborder="0" allow="web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <a href="Baskteball School.html" class="Startup" style="color:blue;">Learn How to Play</a>
+            <a href="Basketball School.html" class="Startup" class="Startup" style="color:blue;">Learn How to Play</a>
 
             <a target="_blank" href="https://store.nba.com/"><img src="https://store.nba.com/content/content/store.nba.com/store.nba.com.svg" width="90%" height="200" style="background-color:black;"></a>
         </article>
@@ -164,6 +199,36 @@
                     }
                 }
             }
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function Slidesmove(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("NewPlayers");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
     </script>
 
