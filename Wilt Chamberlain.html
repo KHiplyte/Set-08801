@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="The GOAT Domain Main.css" type="text/css" />
+    <title>Wilt Chamberlain-The GOAT Domain</title>
+    <link rel="icon" type="image/png" href="Images/DomainLogo.png" />
+</head>
+
+
+
+<!--Body of The Page-->
+
+<Body class="ALL">
+    <h1 class="Main-Head">
+        <a href="index.html">The Goat Domain</a>
+    </h1>
+
+    <ul class="Nav-Bar">
+        <li><a href="The TOP 25.html">THE TOP 25</a></li>
+        <li><a href="Basketball School.html">Basketball School</a></li>
+        <li><a href="Basketball Quiz.html">Basketball Trivia</a></li>
+        <li class="drop">
+            <a onclick="dropper()" class="abut">Basketball Math</a>
+            <div id="dropmenu" class="dropcont">
+                <a href="Shot Calculation.html">Shot Calculation</a>
+                <a href="Player Rater.html">Rate A Player</a>
+            </div>
+        </li>
+    </ul>
+    <div class="Player-Body">
+        <div class="Player-Profile" style="background-color: #3b62abed; ">
+            <div class="Player-Cat0" style="background-image: url(https://cdn.nba.com/logos/nba/1610612744/global/D/logo.svg); background-repeat: no-repeat">
+                <div class="Player-Cat0-1">
+                    <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/76375.png" alt="Wilt Chamberlain" width="100%" height="200">
+                </div>
+                <div class="Player-Cat0-2">
+                    <H3>Wilt Chambelain</H3>
+                    <P>
+                        Teams:
+                        Philadelphia Warriors<br>
+                        San Francisco Warriors<br>
+                        Philadephia 76ers<br>
+                        Los Angeles Lakers
+                    </P>
+                    <br>
+                    <p>Position: Center<p>
+                        <br>
+                    <p>Nickname: Wilt The Stilt</p>
+                </div>
+            </div>
+            <div class="Player-Cat1">
+                <div class="PlayerCat1-1" title="Points Per Game">PPG <hr> 30.1 </div>
+                <div class="PlayerCat1-1" title="Assists Per Game">APG <hr>4.4</div>
+                <div class="PlayerCat1-1" title="Rebounds Per Game">RPG <hr> 22.9</div>
+            </div>
+            <div class="Player-Cat2" title="Date Of Birth"> D.O.B <br>AUG 21st 1936</div>
+            <div class="Player-Cat2">Height <br> 7ft1 </div>
+            <div class="Player-Cat2">Weight <br> 250lbs</div>
+            <div class="Player-Cat2">Draft <br> 1959 R1 #3</div>
+            <div class="Player-Cat2">Years Active <br> 14</div>
+            <div class="Player-Cat2">Championships <br> 2</div>
+        </div>
+        
+        
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/qfczQovODz8?si=upO0l71R7GRdGPvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="align-self:center; margin-block:50px;"></iframe>
+
+        <div class="playerstory">
+            <h1 style="text-align:center;">Retrospective</h1>
+            <p>
+                Wilton Norman Chamberlain born August 21st 1936 was once considered the greatest player ever this was largely in part due to his unpresidented 72 NBA records for scoring, rebound and
+                durability. Mostly remembered for his 100 point game Wilt is said to be mythical in stature. From the recollections of his tenure by many it is said that he was and unbelievable athlete. he was
+                as strong, fast, and agile as he is tall and he was a dominating presence on the court. he once grabs 55 rebounds in a single game and has the record for Minutes per game in a season being 48.5, yes, there
+                are only 48 minutes in a game which mean that he played every minute of every game plus overtime the entire season. Accumulating a stat which puts you in the company of Wilt Chamberlain 
+                in any category is seen as an honor.
+                <br>He was undoubtedly great but only manage to win 2 championships, why is that? iT could be down to the fact that his tenure sees him sandwiched in between the likes of 2 other greats
+                on this list, namely Bill Russell and Kareem Abdul Jabbar who in the former's case could be said to have had a much better team their entire career. It also could be the fact that he played halfway through one of the most
+                competitive stretches in NBA history which saw a plethora of teams finding success in that period. Wilt would play his final season as a laker join Jerry West in embarking on to this day
+                the record for the longest winning streak in a season seing the two stars go on to win 33 games in a row.
+                <br>Though Wilt's legacy often dictates him as a "loser" due to his lacks of drive and
+                effort towrds the sport at times, it is often said to be comical just how easy the it was for Wilt to dominate.
+            </p>
+        </div>
+
+    </div>
+    <footer class="Main-footer">
+        <ul class="Footer-Info" style="font-size:30px;">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="socials">
+            <a target="_blank" href="https://www.youtube.com/"><img src="https://cdn.nba.com/next/social/icon-youtube-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="https://cdn.nba.com/next/social/icon-instagram-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="https://cdn.nba.com/next/social/icon-facebook-color.svg" width="40" height="40"></a>
+        </div>
+
+        <p class="copyright"> © 2024 NBA Media Ventures, LLC. All rights reserved.|Copyright © 2000-2024 Sports Reference LLC. All rights reserved.<p>
+    </footer>
+
+    <script>
+        function dropper() {
+            document.getElementById("dropmenu").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.abut')) {
+                var dropdowns = document.getElementsByClassName("dropcont");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    
+</Body>
+
+</html>

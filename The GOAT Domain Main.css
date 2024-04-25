@@ -342,6 +342,7 @@ th, td, tr {
 		grid-template-columns:auto auto auto;
 		font-weight:bold;
 		color:white;
+		margin-block:20px;
 	}
 
 	.Player-Cat0{
@@ -375,8 +376,22 @@ th, td, tr {
 	font-weight:bold;
 }
 
+.playerstory{
+	border:solid;
+	background:white;
+	padding:5px;
+	margin:10px 20px;
+	text-align:justify;
+	font-size:18px;
+}
 
-
+@media all and (max-width: 800px) {
+	.Player-Profile{
+		display:grid;
+		grid-template-columns:auto auto;
+		width:fit-content;
+	}
+}
 
 
 /*Basketball Quiz Page*/

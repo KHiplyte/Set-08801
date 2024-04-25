@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="The GOAT Domain Main.css" type="text/css" />
+    <title>Bill Russell-The GOAT Domain</title>
+    <link rel="icon" type="image/png" href="Images/DomainLogo.png" />
+</head>
+
+
+
+<!--Body of The Page-->
+
+<Body class="ALL">
+    <h1 class="Main-Head">
+        <a href="index.html">The Goat Domain</a>
+    </h1>
+
+    <ul class="Nav-Bar">
+        <li><a href="The TOP 25.html">THE TOP 25</a></li>
+        <li><a href="Basketball School.html">Basketball School</a></li>
+        <li><a href="Basketball Quiz.html">Basketball Trivia</a></li>
+        <li class="drop">
+            <a onclick="dropper()" class="abut">Basketball Math</a>
+            <div id="dropmenu" class="dropcont">
+                <a href="Shot Calculation.html">Shot Calculation</a>
+                <a href="Player Rater.html">Rate A Player</a>
+            </div>
+        </li>
+    </ul>
+    <div class="Player-Body">
+        <div class="Player-Profile" style="background-color: #317e3ded; ">
+            <div class="Player-Cat0" style="background-image: url(https://cdn.nba.com/logos/nba/1610612738/global/D/logo.svg); background-repeat: no-repeat">
+                <div class="Player-Cat0-1">
+                    <img src="https://i0.wp.com/www.thesportscol.com/wp-content/uploads/2022/08/78049.png?fit=1040%2C760&ssl=1" alt="Bill Russell" width="100%" height="200">
+                </div>
+                <div class="Player-Cat0-2">
+                    <H3>Bill Russell</H3>
+                    <P>
+                        Teams:
+                        Boston Celtics
+                    </P>
+                    <br>
+                    <p>Position: Center<p>
+                        <br>
+                    <p>Nickname: The Secretary 
+                    <br>of Defense</p>
+                </div>
+            </div>
+            <div class="Player-Cat1">
+                <div class="PlayerCat1-1" title="Points Per Game">PPG <hr> 15.1 </div>
+                <div class="PlayerCat1-1" title="Assists Per Game">APG <hr>4.3</div>
+                <div class="PlayerCat1-1" title="Rebounds Per Game">RPG <hr> 22.5</div>
+            </div>
+            <div class="Player-Cat2" title="Date Of Birth"> D.O.B <br>FEB 12th 1934</div>
+            <div class="Player-Cat2">Height <br> 6ft10 </div>
+            <div class="Player-Cat2">Weight <br> 215lbs</div>
+            <div class="Player-Cat2">Draft <br> 1956 R1 #2</div>
+            <div class="Player-Cat2">Years Active <br> 13</div>
+            <div class="Player-Cat2">Championships <br> 11</div>
+        </div>
+        
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qT5GlgXrX-0?si=EgnGGjO5MB5NZzX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="align-self:center; margin-block:50px;"></iframe>
+
+        <div class="playerstory">
+            <h1 style="text-align:center;">Retrospective</h1>
+            <p>
+                William Felton Russell despite averaging only 15 point per game across his career is said to be one of the greatest baketball players ever, why? Well Bill is evidence that the game is not only about scoring
+                Bill was renowned for his stellar defense thus bringing along with it his nickname, The Secretary of Defense. Bill would find himself year on year with a stunning cast of players who as a collective were able to put it all together
+                time after time, how many times? Well in Bill's case 11. this is the largest contributing factor to Bill's placement on the list of greats. not only was a an unbelievable defender and rebounder, but he also had the rings to show for it
+                amasssing a mountainous 11 rings in only 13 seasons a feat that looks unachievable by any other play ever again.<br> Despite having such a tally bill has never won a finals MVP due to the fact that it was yet to have been given out before his final season.
+                Bill did win that year, however the trophy was given out to Jerry West being the only time the losing party had a player win the finals MVP. the NBA did make yup for it though when they eventually decided to rename the award after the defensive star.
+                this thpugh only proves how underappreciated defense is. If you need any evidence as to defense winning championships look no further than Bill.
+            </p>
+        </div>
+
+    </div>
+    <footer class="Main-footer">
+        <ul class="Footer-Info" style="font-size:30px;">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="socials">
+            <a target="_blank" href="https://www.youtube.com/"><img src="https://cdn.nba.com/next/social/icon-youtube-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="https://cdn.nba.com/next/social/icon-instagram-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="https://cdn.nba.com/next/social/icon-facebook-color.svg" width="40" height="40"></a>
+        </div>
+
+        <p class="copyright"> © 2024 NBA Media Ventures, LLC. All rights reserved.|Copyright © 2000-2024 Sports Reference LLC. All rights reserved.<p>
+    </footer>
+
+    <script>
+        function dropper() {
+            document.getElementById("dropmenu").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.abut')) {
+                var dropdowns = document.getElementsByClassName("dropcont");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    
+</Body>
+
+</html>
