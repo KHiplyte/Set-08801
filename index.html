@@ -85,8 +85,8 @@
                     </p>
                 </div>
 
-                <a class="prev" onclick="Slidesmove(-1)">&#10094;</a>
-                <a class="next" onclick="Slidesmove(1)">&#10095;</a>
+                <a class="prev" onclick="Slidesmove(-1)">Prev</a>
+                <a class="next" onclick="Slidesmove(1)">Next</a>
 
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
@@ -149,7 +149,8 @@
 
         <article class="Main-Article">
 
-            <input class="search" type="text" placeholder="search" />
+            <input id="search" type="text" placeholder="Search for a Player"/>
+                
 
             <table class="Main-table">
                 <tr><th>Interested in more?</th></tr>
@@ -161,7 +162,7 @@
 
             <iframe width="90%" height="200" src="https://www.youtube.com/embed/uRz1bNCGjVw?si=r28j7KfZk-yFxzXo" title="ESPN The GOAT Debate" frameborder="0" allow="web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <a href="Basketball School.html" class="Startup" style="color:blue;">Learn How to Play</a>
+            <a href="Basketball School.html" class="Startup" style="color:blue; width:80%;">Learn How to Play</a>
 
             <a target="_blank" href="https://store.nba.com/"><img src="https://store.nba.com/content/content/store.nba.com/store.nba.com.svg" width="90%" height="200" style="background-color:black;"></a>
         </article>
@@ -170,8 +171,8 @@
 
     <footer class="Main-footer">
         <ul class="Footer-Info" style="font-size:30px;">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Acknowledgements.html">Acknowledgements</a></li>
         </ul>
 
         <div class="socials">
@@ -230,6 +231,7 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
+
     </script>
 
 </Body>

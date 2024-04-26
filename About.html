@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="The GOAT Domain Main.css" type="text/css" />
+    <title>About-The GOAT Domain</title>
+    <link rel="icon" type="image/png" href="Images/DomainLogo.png"/>
+</head>
+    
+
+
+<!--Body of The Page-->
+
+<Body class="ALL">
+    <h1 class="Main-Head">
+        <a href="index.html">The Goat Domain</a>
+    </h1>
+
+    <ul class="Nav-Bar">
+        <li><a href="The TOP 25.html">THE TOP 25</a></li>
+        <li><a href="Basketball School.html">Basketball School</a></li>
+       <li><a href="Basketball Quiz.html">Basketball Trivia</a></li>
+        <li class="drop">
+            <a onclick="dropper()" class="abut">Basketball Math</a>
+            <div id="dropmenu" class="dropcont">
+                <a href="Shot Calculation.html">Shot Calculation</a>
+                <a href="Player Rater.html">Rate A Player</a>
+            </div>
+        </li>
+    </ul>
+    <section class="aboutsection">
+        <div class="aboutdiv">
+            <p>
+                This website was created for educational purposes and is part of an assignment given to students of Edinburgh Napier University.
+                This project was created by Karsen Hippolyte a student of the university as of January 2024. This project is a demonstration of site building abilities.
+                even with that the site will continue to be built and developed further.
+            </p>
+            <img src="Images/Headshot.jpg" height="120" width="180" />
+        </div> 
+        
+        <P>For further information about this page please contact us at the links below<p>
+            <ul>
+                <li>Call us at : +1 758-XXX-XXXX</li>
+                <li>Email us at: TheGoatDomain@Redflow.com</li>
+                <li>Visit our social at any of the links below</li>
+                <li>give us your feedback we appreciate it!</li>
+            </ul>
+
+    </section>
+
+    <footer class="Main-footer">
+        <ul class="Footer-Info" style="font-size:30px;">
+            <li><a href="About.html">About</a></li>
+            <li><a href="Acknowledgements.html">Acknowledgements</a></li>
+        </ul>
+
+        <div class="socials">
+            <a target="_blank" href="https://www.youtube.com/"><img src="https://cdn.nba.com/next/social/icon-youtube-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img src="https://cdn.nba.com/next/social/icon-instagram-color.svg" width="40" height="40"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img src="https://cdn.nba.com/next/social/icon-facebook-color.svg" width="40" height="40"></a>
+        </div>
+
+        <p class="copyright"> © 2024 NBA Media Ventures, LLC. All rights reserved.|Copyright © 2000-2024 Sports Reference LLC. All rights reserved.<p>
+    </footer>
+
+    <script>
+        function dropper() {
+            document.getElementById("dropmenu").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.abut')) {
+                var dropdowns = document.getElementsByClassName("dropcont");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function Slidesmove(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("NewPlayers");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</Body>
+
+</html>

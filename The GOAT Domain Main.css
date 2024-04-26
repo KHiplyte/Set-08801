@@ -112,6 +112,8 @@ display:block;
 	object-fit: cover;
 }
 
+
+/*Players to Watch Slides*/
 .NewPlayers-Container {
 	grid-column-start: 1;
 	grid-column-end: 6;
@@ -146,7 +148,7 @@ display:block;
 	width: auto;
 	margin-top: -22px;
 	padding: 16px;
-	color: black;
+	color: #0000008c;
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.6s ease;
@@ -194,7 +196,7 @@ display:block;
 	}
 }
 
-
+/*Player Page Promotion*/
 .JordanPromo, .LebronPromo, .WiltPromo, .RussellPromo, .CurryPromo {
 	max-width: 140px;
 	height: 200px;
@@ -254,6 +256,8 @@ th, td, tr {
 	font-family: Before Collapse;
 }
 
+
+/*Page Footers*/
 .Main-footer {
 	display: grid;
 	grid-template-columns: 75% 15%;
@@ -263,11 +267,14 @@ th, td, tr {
 	color:white;
 	max-width:stretch;
 	margin-inline:0;
+	height:contain;
+	padding-inline:10% 5%;
 }
 .Footer-Info{
 	padding:0px;
 	font-weight:bold;
 	align-content:center;
+	font-size:16px;
 }
 
 .socials {
@@ -285,7 +292,9 @@ th, td, tr {
 	}
 }
 	
-
+#search{
+	width:80%;
+}
 
 
 /*Top 25 Players page*/
@@ -633,4 +642,19 @@ margin-inline:auto;
 	}
 }
 
-
+/*Footer Links*/
+.aboutsection {
+	margin:25px;
+display:grid;
+grid-template-columns:auto;
+border:solid;
+border-radius:15px;
+background:white;
+padding:10px;
+}
+.aboutdiv{
+	Display:grid;
+	grid-template-columns:auto auto;
+	padding:10px;
+	margin-inline:20px;
+}
