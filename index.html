@@ -149,8 +149,10 @@
 
         <article class="Main-Article">
 
-            <input id="search" type="text" placeholder="Search for a Player"/>
-                
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="filterNames()" placeholder="Search for a player">
+                <div id="searchDropdown" class="search-dropdown-content"></div>
+            </div>
 
             <table class="Main-table">
                 <tr><th>Interested in more?</th></tr>
@@ -232,6 +234,58 @@
             dots[slideIndex - 1].className += " active";
         }
 
+        const names = [
+            "Michael Jordan",
+            "LeBron James",
+            "Kareem Abdul Jabbar",
+            "Magic Johnson",
+            "Larry Bird",
+            "Bill Russell",
+            "Wilt Chamberlain",
+            "Tim Duncan",
+            "Shaquille O'Neal",
+            "Kobe Bryant",
+            "Hakeem Olajuwon",
+            "Oscar Robertson",
+            "Karl Malone",
+            "Moses Malone",
+            "Jerry West",
+            "Julius Erving",
+            "Dirk Nowitzki",
+            "Kevin Durant",
+            "Steph Curry",
+            "Elgin Baylor",
+            "Bob Pettit",
+            "David Robinson",
+            "Charles Barkley",
+            "John Stockton",
+            "Dwyane Wade"]; 
+
+        function filterNames() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toUpperCase();
+            const dropdown = document.getElementById('searchDropdown');
+            const namesMatching = names.filter(name => name.toUpperCase().includes(filter));
+            dropdown.innerHTML = '';
+            namesMatching.forEach(name => {
+                const link = document.createElement('a');
+                link.href = (`Players/${name}.html`);
+                link.textContent = name;
+                dropdown.appendChild(link);
+            });
+            if (filter) {
+                dropdown.classList.add('show');
+            } else {
+                dropdown.classList.remove('show');
+            }
+        }
+
+        document.addEventListener('click', function (event) {
+            const dropdown = document.getElementById('searchDropdown');
+            if (!event.target.matches('#searchInput')) {
+                dropdown.classList.remove('show');
+            }
+        });
     </script>
 
 </Body>

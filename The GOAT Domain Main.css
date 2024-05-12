@@ -206,6 +206,46 @@ display:block;
 	}
 }
 
+/*Homepage Search Bar*/
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.search-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    border: 1px solid #ddd;
+}
+
+.search-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.search-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+	display: block;
+}
+
+
+
 /*Player Page Promotion*/
 .JordanPromo, .LebronPromo, .WiltPromo, .RussellPromo, .CurryPromo {
 	max-width: 140px;
